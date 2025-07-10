@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missão Espacial: Calculadora de Combustível</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Missão Espacial 🚀</h1>
+      <h2>Calculadora de Combustível</h2>
+
+      <div class="input-group">
+        <label for="distance">Distância (milhões de km):</label>
+        <input type="number" id="distance" placeholder="Ex: 225" value="225" />
+      </div>
+
+      <div class="input-group">
+        <label for="cargo">Carga Total (toneladas):</label>
+        <input type="number" id="cargo" placeholder="Ex: 3500" value="3500" />
+      </div>
+
+      <div class="button-group">
+        <button style="--clr: #ff8c00" id="calculate"><span>CALCULAR</span><i></i></button>
+        <button style="--clr: #ff0044" id="back"><span>VOLTAR</span><i></i></button>
+      </div>
+
+      <div class="result-container">
+        <h3>Resultado:</h3>
+        <div id="calculation"></div>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
